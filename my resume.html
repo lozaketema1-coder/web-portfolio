@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume - Lozi Portfolio</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+nav {
+    background-color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+}
+nav .logo { font-weight:bold; font-size:20px; color:#4a90e2; }
+nav ul { list-style:none; display:flex; gap:20px; flex-wrap:wrap; }
+nav ul li a { text-decoration:none; color:#333; font-weight:500; transition:color 0.3s; }
+nav ul li a:hover { color:#4a90e2; }
+
+.resume-header {
+    text-align:center;
+    padding:50px 20px 20px 20px;
+}
+.resume-header h1 { font-size:36px; color:#357ABD; margin-bottom:15px; }
+.resume-header p { font-size:18px; color:#555; }
+
+.resume-preview {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+.resume-preview img {
+    max-width: 100%;
+    border-radius:10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    background-color:#4a90e2;
+    color:#fff;
+    font-weight:500;
+    cursor:pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.btn:hover {
+    background-color:#357ABD;
+    transform: scale(1.05);
+}
+
+footer { text-align:center; padding:20px; background:#fff; margin-top:50px; box-shadow:0 -2px 5px rgba(0,0,0,0.05); }
+
+@media (max-width:480px){
+    .resume-header h1 { font-size:28px; }
+    .resume-header p { font-size:16px; }
+    .btn { padding:10px 20px; font-size:14px; }
+}
+</style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Lozi</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="my resume.html">Resume</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<section class="resume-header">
+    <h1>My Resume</h1>
+    <p>Here’s a quick overview of my education, skills, and achievements.</p>
+</section>
+
+<section class="resume-preview">
+    <img src="template-vibes-blue-navy.png" alt="Resume Preview">
+    <br>
+    <a href="template-vibes-blue-navy.png" download>
+        <button class="btn">Download Resume</button>
+    </a>
+</section>
+
+<footer>
+    &copy; 2025 Lozi. All rights reserved.
+</footer>
+
+</body>
+</html>

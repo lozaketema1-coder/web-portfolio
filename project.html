@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Lozi Portfolio</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+        nav .logo { font-weight:bold; font-size:20px; color:#4a90e2; }
+        nav ul { list-style:none; display:flex; gap:20px; flex-wrap:wrap; }
+        nav ul li a { text-decoration:none; color:#333; font-weight:500; transition:color 0.3s; }
+        nav ul li a:hover { color:#4a90e2; }
+
+        .projects-header { text-align:center; padding:50px 20px 20px 20px; }
+        .projects-header h1 { font-size:36px; color:#357ABD; margin-bottom:15px; }
+        .projects-header p { font-size:18px; color:#555; }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap:20px;
+            max-width:900px;
+            margin:40px auto;
+            padding:0 20px;
+        }
+        .project-card {
+            background:#fff;
+            border-radius:10px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.1);
+            padding:20px;
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.15); }
+        .project-card h2 { font-size:22px; color:#4a90e2; margin-bottom:10px; }
+        .project-card p { font-size:16px; color:#555; margin-bottom:15px; }
+        .project-card .btn {
+            padding:10px 20px; border:none; border-radius:5px;
+            background-color:#4a90e2; color:#fff; font-weight:500;
+            cursor:pointer; transition: background-color 0.3s;
+        }
+        .project-card .btn:hover { background-color:#357ABD; }
+
+        footer { text-align:center; padding:20px; background:#fff; margin-top:50px; box-shadow:0 -2px 5px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Lozi</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="my resume.html">Resume</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Projects Header -->
+    <section class="projects-header">
+        <h1>My Projects</h1>
+        <p>Here are some projects I’ve worked on. Each card shows my work and the skills I used.</p>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+
+        <div class="project-card">
+            <h2>Portfolio Website</h2>
+            <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase my skills.</p>
+            <button class="btn" onclick="alert('Project link placeholder')">View Project</button>
+        </div>
+
+        <div class="project-card">
+            <h2>Landing Page Design</h2>
+            <p>A responsive landing page design demonstrating modern UI and clean layout techniques.</p>
+            <button class="btn" onclick="alert('Project link placeholder')">View Project</button>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; 2025 Lozi. All rights reserved.
+    </footer>
+
+</body>
+</html>

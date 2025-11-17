@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Loza Portfolio</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Navigation */
+    nav {
+        background-color: #fff;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+    }
+    nav .logo { font-weight:bold; font-size:20px; color:#4a90e2; }
+    nav ul { list-style:none; display:flex; gap:20px; flex-wrap:wrap; }
+    nav ul li a { text-decoration:none; color:#333; font-weight:500; transition:color 0.3s; }
+    nav ul li a:hover { color:#4a90e2; }
+
+    /* Contact Section */
+    .contact-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 20px;
+        gap: 12px;
+        width: 100%;      /* full width */
+    }
+    .contact-section h1 { font-size: 36px; color: #357ABD; margin-bottom: 15px; }
+    .contact-section p { font-size: 18px; color: #555; margin-bottom: 10px; }
+
+    /* Socials */
+    .socials {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .socials a {
+        text-decoration: none;
+        background: #f1f6ff;
+        color: #1b4f9b;
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    /* Map styling */
+    .map {
+        width: 100%;
+        max-width: 800px;
+        height: 360px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+    .map iframe { width: 100%; height: 100%; border: 0; }
+
+    /* Footer */
+    footer { text-align:center; padding:20px; background:#fff; box-shadow:0 -2px 5px rgba(0,0,0,0.05); }
+
+    /* Responsive */
+    @media (max-width:820px){
+        .map { height:300px; }
+        nav { flex-direction: column; gap:10px; }
+        nav ul { justify-content: center; }
+    }
+    @media (max-width:480px){
+        .contact-section h1 { font-size:28px; }
+        .contact-section p { font-size:16px; }
+        .map { height:240px; }
+    }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+
+    <nav>
+        <div class="logo">Lozi</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="my resume.html">Resume</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <h1>Contact Me</h1>
+    <p><strong>Name:</strong> Loza Ketema</p>
+    <p><strong>Phone:</strong> 09-********</p>
+    <p><strong>Location:</strong> Addis Ababa</p>
+
+    <div class="socials">
+        <a href="#" title="GitHub (placeholder)">GitHub</a>
+        <a href="#" title="LinkedIn (placeholder)">LinkedIn</a>
+        <a href="#" title="Instagram (placeholder)">Instagram</a>
+    </div>
+
+    <div class="map">
+        <iframe 
+            src="https://www.google.com/maps?q=Addis+Ababa,+Ethiopia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Map showing Addis Ababa">
+        </iframe>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    &copy; 2025 Loza. All rights reserved.
+</footer>
+
+</body>
+</html>
